@@ -22,7 +22,6 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration
-      run: cmake -H. -B ${{github.workspace}}/hello_world_application/build && cmake --build ${{github.workspace}}/hello_world_application/build --config ${{env.BUILD_TYPE}}
-          cmake -H. -B ${{github.workspace}}/solver_application/build && cmake --build ${{github.workspace}}/solver_application/build --config ${{env.BUILD_TYPE}}
+      run: cmake -H. -B_build && cmake --build _build
 
       
