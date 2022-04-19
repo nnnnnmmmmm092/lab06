@@ -13,8 +13,7 @@ add_library(formatter_ex_lib STATIC "formatter_ex_lib/formatter_ex.cpp")
 add_library(solver_lib STATIC "solver_lib/solver.cpp")
 
 add_executable(solver "solver_application/equation.cpp")
-add_executable(hello "hello_world_application/hello_world.cpp")
-target_link_libraries(hello formatter_ex_lib formatter_lib)
+
 target_link_libraries(solver solver_lib formatter_ex_lib formatter_lib)
 
 include(InstallRequiredSystemLibraries)

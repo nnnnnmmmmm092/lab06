@@ -1,9 +1,0 @@
-/home/augustus/TIMP/lab06/_build/CMakeFiles/formatter_lib.dir
-/home/augustus/TIMP/lab06/_build/CMakeFiles/formatter_ex_lib.dir
-/home/augustus/TIMP/lab06/_build/CMakeFiles/solver_lib.dir
-/home/augustus/TIMP/lab06/_build/CMakeFiles/solver.dir
-/home/augustus/TIMP/lab06/_build/CMakeFiles/hello.dir
-/home/augustus/TIMP/lab06/_build/CMakeFiles/package.dir
-/home/augustus/TIMP/lab06/_build/CMakeFiles/package_source.dir
-/home/augustus/TIMP/lab06/_build/CMakeFiles/edit_cache.dir
-/home/augustus/TIMP/lab06/_build/CMakeFiles/rebuild_cache.dir
