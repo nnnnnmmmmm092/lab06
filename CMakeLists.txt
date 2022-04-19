@@ -16,8 +16,4 @@ add_executable(solver "solver_application/equation.cpp")
 
 target_link_libraries(solver solver_lib formatter_ex_lib formatter_lib)
 
-include(InstallRequiredSystemLibraries)
-set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE")
-set(CPACK_PACKAGE_VERSION_MAJOR "0.1")
-set(CPACK_PACKAGE_VERSION_MINOR "0.002")
-include(CPack)
+include(CPackConfig.cmake)
