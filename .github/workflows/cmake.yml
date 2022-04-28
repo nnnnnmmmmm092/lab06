@@ -26,7 +26,7 @@ jobs:
            cd _build && cpack -G "DEB" &&
            cpack -G "RPM" &&
            mkdir artifacts &&
-           cd _build && mv *.tar.gz ../artifacts
+           mv *.tar.gz ../artifacts
            
          
            
