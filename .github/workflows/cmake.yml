@@ -26,7 +26,7 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration
-      run: cmake -H. -B_build && cmake --build _build && cd _build && cpack -G $GIT_TAG_NAME
+      run: cmake -H. -B_build && cmake --build _build && cd _build && cpack -G $GIT_TAG_NAME && echo $GIT_TAG_NAME
       
     - name: Publish
       uses: actions/upload-artifact@v2
