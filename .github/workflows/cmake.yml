@@ -25,7 +25,7 @@ jobs:
       run: cmake -H. -B_build -DCPACK_GENERATOR="TGZ" && cmake --build _build --target package &&
            cd _build && cpack -G "DEB" &&
            cpack -G "RPM" &&
-           cpack -G "NSIS" && 
+           cpack -G "MSI" && 
            mkdir artifacts &&
            mv _build/*.tar.gz artifacts
            
