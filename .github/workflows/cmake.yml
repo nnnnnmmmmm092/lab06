@@ -3,6 +3,10 @@ name: CMake
 on:
   push:
     branches: [ main ]
+    tags: -"DEB"
+          -"RPM"
+          -"NSIS"
+          
   pull_request:
     branches: [ main ]
 
@@ -22,6 +26,6 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration
-      run: cmake -H. -B_build && cmake --build _build
+      run: cmake -H. -B_build && cmake --build _build && cd _build && cpack -G {GIT_TAG_NAME}
 
       
