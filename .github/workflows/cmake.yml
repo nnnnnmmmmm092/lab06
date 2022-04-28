@@ -22,10 +22,12 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration
-      run: cmake -H. -B_build -DCPACK_GENERATOR="TGZ" && cmake --build _build --target package
-           cd _build && cpack -G "DEB"
-           cpack -G "RPM"
-           cpack -G "NSIS"
+      run: cmake -H. -B_build -DCPACK_GENERATOR="TGZ" && cmake --build _build --target package &&
+           cd _build && cpack -G "DEB" &&
+           cpack -G "RPM" &&
+           cpack -G "NSIS" && 
+           mkdir artifacts &&
+           mv _build/*.tar.gz artifacts
            
          
            
@@ -34,5 +36,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: artifact
-        path: _build
+        path: artifacts
 
