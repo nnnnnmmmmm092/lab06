@@ -26,7 +26,6 @@ jobs:
            mkdir artifacts &&
            mv *.tar.gz artifacts/
            
-                 
     - name: Publish
       uses: actions/upload-artifact@v2
       with:
